@@ -2,17 +2,17 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1234',
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b231e8080c657a',
+    password: '56ac674b',
     port: 3306,
-    database: 'seomun',
+    database: 'heroku_f1f3904780a8ce1',
     dateStrings: 'date' //dateString은 날짜 시간 출력
     //원래는 이렇게 쓰면 안 되고 다른데에 옮긴 후 연결하는 방식으로 해야 함
 })
 
 
-//리스트 전체를 불러오는 함수
+//리스트 전체를 불러오는 함수+++
 function getAllBoard(callback) {
     connection.query(`SELECT * FROM board ORDER BY id DESC`, (err, rows, fields) => {
         if(err) throw err;
