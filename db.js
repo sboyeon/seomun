@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 })
 
 
-//리스트 전체를 불러오는 함수+++
+//리스트 전체를 불러오는 함수
 function getAllBoard(callback) {
     connection.query(`SELECT * FROM board ORDER BY id DESC`, (err, rows, fields) => {
         if(err) throw err;
