@@ -1,0 +1,80 @@
+
+        <section class="intro">
+            <h2>참여마당</h2>
+            <div>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a class="dis_none" href="#">행사안내</a></li>
+                    <li><a class="dis_none" href="#">현장스케치</a></li>
+                    <li><a class="dis_none" href="#">언론보도</a></li>
+                    <li><a class="dis_none" href="#">문의 및 제안</a></li>
+                    <li><a class="dis_none" href="#">입점상담</a></li>
+                    <li><a class="plus" href="#">+</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="notice">
+            <h2>공지사항</h2>
+            <article class="nav">
+                <p>서문·칠성야시장 매대운영자 모집공고</p>
+                <div>
+                    <ul>
+                        <li class="master">마스터</li>
+                        <li class="re">
+                            <img src="img/d094736fe0923ce2dcf49ffd2b93dad5.png">
+                            0건
+                        </li>
+                        <li class="look">
+                            <img src="img/64873.png">
+                            416회
+                        </li>
+                    </ul>
+                    <span class="clock">
+                        <img src="img/clock.png">
+                        22-03-24 18:54
+                    </span>
+                </div>
+            </article>
+            <article class="file">
+                <ul>
+                    <li><a href="">
+                        <p>서문칠성야시장 매대운영자 모집 공고.hwp</p>
+                        <span>59회 다운로드 DATE : 2022-03-28 16:17:13</span>
+                    </a></li>
+                    <li><a href="">
+                        <p>음식 매대운영자 모집 신청서.hwp</p>
+                        <span>36회 다운로드 DATE : 2022-03-28 16:17:13</span>
+                    </a></li>
+                    <li><a href="">
+                        <p>야시장 프리마켓 신청서.hwp</p>
+                        <span>9회 다운로드 DATE : 2022-03-28 16:17:13</span>
+                    </a></li>
+                    <li><a href="">
+                        <p>야시장 대학매대 신청서.hwp</p>
+                        <span>4회 다운로드 DATE : 2022-03-28 16:17:13</span>
+                    </a></li>
+                </ul>
+            </article>
+            <% if(typeof errs !== 'undefined'){ %>
+                <% errs.forEach(() =>{ %>
+                    <h3><%= err.param %> : <%= err.msg %></h3>
+                <% }) %>
+            <%}%>
+            <form>
+                <input type="hidden" name="id" value="<%=row.id%>">
+                <div class="txt">
+                    <p><%= row.content%></p>
+                </div>
+            </form>
+            <article class="but">
+                <a href="">
+                    <div>
+                        <input type="button" value="이전글">
+                        <input type="button" value="다음글">
+                    </div>
+                    <div>
+                        <input type="button" value="목록">
+                    </div>
+                </a>
+            </article>
+    </section>

@@ -1,0 +1,354 @@
+.top_img{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    background: url(../img/topVisual01.png) right center no-repeat;
+    height: 210px;
+    background-color: lavender;
+}
+
+.top_img>p{
+    font-size: 32px !important;
+    text-align: left;
+    padding: 134px 0 0 40px;
+    font-weight: 400;
+    color: #292a2d;
+    line-height: 1.2;
+}
+
+.t_txt{
+    width: 1440px;
+    margin: auto;
+    line-height: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+}
+
+.t_txt>img{
+    width: 20px; height: 20px;
+    padding: 10px 0 10px 20px ;
+}
+
+.t_txt>ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.t_txt>ul a{
+    display: block;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #727476;
+}
+
+.login_tab{
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tab{
+    display: flex;
+}
+
+.tab>div{
+    width: 33.333%; height: 60px;
+}
+
+.tab a{
+    display: block;
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    color: #434e65;
+    line-height: 58px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_l{
+    border: 2px solid #5b648a;
+    border-bottom: 1px solid #e2e2e4;
+}
+
+.tab_r{
+    border: 1px solid #e2e2e4;
+}
+
+.tab_box{
+    width: 1200px; height: 600px;
+    padding: 55px 33px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.l_box{
+    width: 80%;
+    text-align: left;
+}
+
+.l_box p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #292a2d;
+    margin-bottom: 40px;
+}
+
+.input{
+    display: flex;
+}
+
+.input input{
+    width: 410px;
+    line-height: 40px;
+    max-width: 100%;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #cdcdd1;
+    padding: 3px 10px;
+    height: 40px;
+    white-space: nowrap;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.input>button{
+    margin: 10px 15px;
+    width: 120px;
+    height: 90px;
+    background: #4171df;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input>button>a{
+    color: #fff;
+}
+
+.m_input{
+    display: flex;
+}
+
+.m_input>input{
+    margin: 5px;
+}
+
+.m_input>p>a{
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0 0 110px;
+    box-sizing: border-box;
+    color: #727476;
+}
+
+.b_input{
+    margin-top: 36px;
+    padding-top: 36px;
+    border-top: 1px solid #e2e2e4;
+}
+
+.b_input>p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #727476;
+    text-align: center;
+}
+
+.b_input>button{
+    background: #4171df;
+    text-align: center;
+    align-items: center;
+    margin-left: 45%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.b_input>button>a{
+    color: #fff;
+}
+
+.l_box ul{
+    display: flex;
+    margin-top: 40px;
+}
+
+.l_box ul a{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 50px;
+    color: #434e65;
+}
+
+.input_img1{
+    background: url(../img/ico_ipin.svg) no-repeat 0 center;
+    background-size: 22px 22px;
+    margin-left: 0;
+}
+
+.input_img2{
+    background: url(../img/ico_kakao.svg) no-repeat 0 center;
+    background-size: 22px 22px;
+    margin-left: 60px;
+}
+
+.input_img3{
+    background: url(../img/ico_certify02.svg) no-repeat 0 center;
+    background-size: 22px 22px;
+    margin-left: 60px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1217px) {
+    .top_img{
+        width: 100%;
+        height: 210px;
+    }
+    
+    .top_img>p{
+        font-size: 28px;
+        padding: 134px 0 0 40px;
+    }
+    
+    .t_txt{
+        width: 100%;
+        line-height: 40px;
+    }
+
+    .t_txt>ul a{
+        display: block;
+        padding: 0 18px;
+    }
+    
+    .login_tab{
+        width:100%;
+        margin-top: 30px;
+    }
+    
+    .tab_box{
+        width: 100%; height: 600px;
+        padding: 55px 33px;
+        box-sizing: border-box;
+    }
+
+    .l_box{
+        width: 70%;
+    }
+    
+    .input input{
+        width: 380px;
+        line-height: 38px;
+        max-width: 100%;
+        padding: 3px 10px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .input>button{
+        margin: 10px 9px;
+        width: 100px;
+        height: 80px;
+    }
+    
+    .b_input{
+        margin-top: 34px;
+        padding-top: 34px;
+    }
+    
+    .b_input>button{
+        margin-left: 40%;
+    }
+    
+    .l_box ul{
+        margin-top: 40px;
+    }
+    
+    .l_box ul a{
+        display: block;
+        margin-left: 50px;
+    }
+
+
+
+
+    /**************** max-width: 1217px ********************/
+}
+
+@media only screen and (max-width: 860px) {
+
+    .input>button{
+        width: 120px;
+        height: 90px;
+        font-size: 15px;
+    }
+
+    .l_box ul{
+        margin-top: 40px;
+    }
+    
+    .l_box ul a{
+        display: block;
+        font-size: 13px;
+        margin-right: 5px;
+        margin-left: 45px;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .input{
+        display: block;
+    }
+
+    .input>button{
+        width: 20%; height: 40px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .m_input>p{
+        font-size: 13px;
+        text-align: center;
+        padding: 5px 0 0 110px;
+    }
+
+    .l_box p{
+        margin-bottom: 20px;
+    }
+
+    .l_box ul{
+        margin-top: 30px;
+    }
+    
+    .l_box ul a{
+        display: block;
+        font-size: 13px;
+        margin-right: 4px;
+        margin-left: 30px;
+    }
+
+    .b_input{
+        margin: 30px 0;
+        padding-top: 30px;
+    }
+    
+    .b_input>p{
+        font-size: 14px;
+    }
+    
+    .b_input>button{
+        margin-left: 40%;
+    }
+    
+
+    
+}

@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^6.14.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "static": "^2.0.0"
+  },
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sboyeon/NODE.git"
+  },
+  "author": "sboyeon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sboyeon/NODE/issues"
+  },
+  "homepage": "https://github.com/sboyeon/NODE#readme",
+  "description": "프로젝트 작성중..."
+}

@@ -1,0 +1,91 @@
+
+        <section class="intro">
+            <h2>참여마당</h2>
+            <div>
+                <ul>
+                    <li><a href="http://www.nightseomun.com/html/base.php?url=html_12">공지사항</a></li>
+                    <li><a class="dis_none" href="http://www.nightseomun.com/html/base.php?url=html_13">행사안내</a></li>
+                    <li><a class="dis_none" href="http://www.nightseomun.com/html/base.php?url=html_14">현장스케치</a></li>
+                    <li><a class="dis_none" href="http://www.nightseomun.com/html/base.php?url=html_15">언론보도</a></li>
+                    <li><a class="dis_none" href="http://www.nightseomun.com/html/base.php?url=html_16">문의 및 제안</a></li>
+                    <li><a class="dis_none" href="http://www.nightseomun.com/html/base.php?url=html_100">입점상담</a></li>
+                    <li><a class="plus" href="#">+</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="notice">
+            <h2>공지사항</h2>
+        </section>
+        <section class="table">
+            <article>
+                <div class="page">
+                    <div>
+                        <p>Total <span>87건</span> 1페이지</p>
+                    </div>
+                </div>
+                <input type="button" value="게시판" onclick="javascript:location.href='/notice_write'">
+            </article>
+            <table>
+                <thead>
+                    <tr class="tbNotice">
+                        <th class="num">번호</th>
+                        <th class="subject">제목</th>
+                        <th class="name">글쓴이</th>
+                        <th class="date dis_none">날짜</th>
+                        <th class="del dis_none">관리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% rows.forEach((row, index) => { %>
+                    <tr class="tb_notice">
+                        <th class="num"><%= row.id%></th>
+                        <th class="subject"><a onclick="javascript:location.href='/notice_read?id=<%=row.id%>'"><%= row.content%></a></th>
+                        <td class="name"><%= row.writer%></td>
+                        <td class="date dis_none"><%= row.DATE%></td>
+                        <td class="look de_none dis_none"><%= row.view%></td>
+                        <td>
+                            <input type="button" onclick="javascript:location.href='/updateBoard?id=<%=row.id%>'" value="수정">
+                            <input type="button" onclick="javascript:location.href='/deleteBoard?id=<%=row.id%>'" value="삭제">
+                        </td>
+                    </tr>
+                <% }) %>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <article class="m_search">
+                <div class="sel">
+                    <select class="select" name="option">
+                        <option value="" disabled selected>제목</option>
+                        <option value="1">내용</option>
+                        <option value="2">제목+내용</option>
+                        <option value="3">글쓴이</option>
+                        <option value="4">회원정보</option>
+                    </select>
+                    <div class="m_search_txt">
+                        <input type="text">
+                    </div>
+                    <div class="button">
+                        <a href="">
+                        <input type="button" value="검색">
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="b_search">
+            <div>
+                <a href="">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li class="dis_none">4</li>
+                        <li class="dis_none">5</li>
+                        <li class="dis_none">6</li>
+                        <li class="active">맨끝</li>
+                    </ul>
+                </a>
+            </div>
+        </section>
+ 

@@ -1,0 +1,163 @@
+main>h1>a{
+    margin: 40px auto 20px;
+    padding: 20px 0;
+}
+
+.content{
+    width: 800px;
+    margin: 30px auto 15px;
+}
+
+.menu{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.menu>span{
+    display: inline-block;
+    color:  #FF9090;
+}
+
+.content input{
+    background: #fff;
+    outline: 0;
+    display: block;
+    width: 80%; height: 41px;
+    border: solid 1px #dadada;
+    padding: 10px 110px 10px 14px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.content_info{
+    display: flex;
+    margin-top: 10px;
+}
+
+.content_info>input, select{
+    width: 26%;
+    margin-right: 10px;
+}
+
+.month{
+    height: 41px;
+    border: 1px solid #dadada;
+    color: gray;
+}
+
+.sex{
+    width: 80%; height: 41px;
+    border: 1px solid #dadada;
+    color: gray;
+    padding: 10px 110px 10px 14px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.phone_wrap{
+    display: flex;
+}
+
+.phone_wrap>input{
+    width: 50%;
+    margin-right: 38px;
+    padding: 10px 15px 10px 14px;
+}
+
+.phone_wrap>button{
+    width: 25%; height: 41px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    border: solid 1px rgba(0,0,0,.08);
+    background-color: #4D3494;
+}
+
+.b_join{
+    width: 80%;
+    color: #fff;
+    border: solid 1px rgba(0,0,0,.08);
+    background-color: #4D3494;
+    padding: 15px 0 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#reaseon{
+    width: 80%;
+    border: solid 1px #dadada;
+}
+
+
+
+
+
+@media only screen and (max-width: 1217px) {
+
+    main>h1>a{
+        margin: 40px auto;
+    }
+    .
+
+    /********** max-width: 1217px ***********/
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    main>h1>a{
+        margin: 40px auto;
+        padding: 15px 10px;
+    }
+    
+    .content{
+        width: 100%;
+        margin: 35px;
+    }
+
+    .phone_wrap>input{
+        width: 55%;
+        margin-right: 38px;
+        padding: 10px 15px 10px 14px;
+    }
+    
+    .phone_wrap>button{
+        width: 20%; height: 41px;
+        font-size: 15px;
+    }
+
+
+
+    /************* max-width: 768px *************/
+}
+
+
+@media only screen and (max-width: 560px) {
+
+    
+    .content_info>input, select{
+        margin-right: 5px;
+    }
+
+    .phone_wrap>input{
+        margin-right: 20px;
+    }
+
+    .phone_wrap>button{
+        font-size: 12px;
+    }
+
+
+
+
+    /*********** max-width: 520px ***************/
+}

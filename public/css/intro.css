@@ -1,0 +1,641 @@
+
+/*********  main ***********/
+
+.intro{
+    width: 100%; height: 431px;
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro>h2{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 36px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding: 30px auto;
+    box-sizing: border-box;
+}
+
+.intro>div{
+    width: 665px;
+}
+
+.intro>div>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro>div>ul>li>a{
+    margin: 10px auto;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.intro>div>ul>li>.plus{
+    display: none;
+}
+
+.text>h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 100px auto 30px;
+}
+
+.text>h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.text>h2>span{
+    color: #FF9090;
+}
+
+.image_wrap{
+    padding-top: 30px;
+}
+
+.image{
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.up_text_wrap{
+    width: 1217px; height: 570px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.up_text_wrap>.up_text{
+    text-align: center;
+    margin: auto;
+}
+
+
+.up_text_wrap>div>p{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.up_text_wrap .up1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.up1>span{
+    color: #4D3494;
+}
+
+.down1>span{
+    display: block;
+}
+
+.up_img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.up_img>div{
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center auto;
+    transition: transform 0.4s;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0, 0.2);
+}
+
+.up_img>div:hover{
+    transform: translate(0, -25px);
+}
+
+.up_img>.up_img1{
+    background-image: url(../img/seomunentry.jpg);
+}
+
+.up_img>.up_img2{
+    background-image: url(../img/seomun\ people.png);
+}
+
+.up_img>.up_img3{
+    background-image: url(../img/food.jpg);
+}
+
+.dw_text_wrap{
+    width: 1217px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.dw_text_wrap>.dw_text{
+    text-align: center;
+    margin: auto;
+}
+
+.dw_text_wrap>div>p{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dw_text_wrap .up1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dw_img{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.dw_img>div{
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center auto;
+    transition: transform 0.4s;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0, 0.2);
+}
+
+
+.dw_img>div:hover{
+    transform: translate(0, -25px);
+}
+
+
+.dw_img>.dw_img1{
+    background-image: url(../img/festival.jpg);
+}
+
+.dw_img>.dw_img2{
+    background-image: url(../img/fireworks.jpg);
+}
+
+.dw_img>.dw_img3{
+    background-image: url(../img/daegufestival.jpg);
+}
+
+.road{
+    margin: 50px auto;
+}
+
+.road h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.map_wrap{
+    width: 1217px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 3px rgb(0, 0, 0, 0.1);
+}
+
+.map{
+    width: 100%; height: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.t_map>iframe{
+    display: block;
+    margin: 10px auto;
+    height: 400px;
+}
+
+.address>h2{
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.intro_dw_wrap{
+    width: 1217px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.intro_dw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.intro_dw>div{
+    width: 25%;
+    margin: 0 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 3px rgb(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.intro_dw>div:hover{
+    transform: translate(0, -25px);
+}
+
+
+.time>img{
+    width: 47px; height: 47px;
+    display: block;
+    margin: auto;
+}
+
+.phone>img{
+    width: 47px; height: 47px;
+    display: block;
+    margin: auto;
+}
+
+.how>img{
+    width: 47px; height: 47px;
+    display: block;
+    margin: auto;
+}
+
+.ask>img{
+    width: 47px; height: 47px;
+    display: block;
+    margin: auto;
+}
+
+.intro_dw>div>p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.intro_dw>div>p>a{
+    display: block;
+    color: #333;
+}
+
+.intro_dw .up2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FAA521;
+}
+
+  
+
+@media only screen and (max-width: 1217px){
+
+    .intro{
+        height: 400px;
+    }
+    
+    .intro>h2{
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .intro>div{
+        width: 600px;
+    }
+    
+    .intro>div>ul>li>a{
+        margin: 8px auto;
+        padding-bottom: 8px;
+        box-sizing: border-box;
+    }
+
+    .text>h3{
+        font-size: 16px;
+        margin: 80px auto 25px;
+    }
+    
+    .text>h2{
+        font-size: 18px;;
+        margin: 15px auto;
+    }
+    
+    .image_wrap{
+        padding-top: 25px;
+    }
+    
+    .image{
+        width: 100%;
+        padding: 15px 8px;
+        box-sizing: border-box;
+    }
+
+    .up_text_wrap{
+        width: 100%; height: 650px;
+        margin: 15px auto;
+    }
+    
+    .up_text_wrap>div>p{
+        font-size: 15px;
+        padding: 30px 20px; /*50px 100px;*/
+        box-sizing: border-box;
+    }
+    
+    .up_text_wrap .up1{
+        font-size: 18px;
+    }
+
+    .up_img>div{
+        width: 200px; height: 200px;
+    }
+
+    .dw_text_wrap{
+        width: 100%; height: 480px;
+        margin: 15px auto;
+    }
+    
+    .dw_text_wrap>div>p{
+        font-size: 15px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+    
+    .dw_text_wrap .up1{
+        font-size: 18px;
+    }
+    
+    .dw_img>div{
+        width: 200px; height: 200px;
+    }
+
+    .road{
+        margin: 5px auto;
+    }
+    
+    .road h2{
+        font-size: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .map_wrap{
+        width: 100%;
+        /*margin: 20px auto;*/
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .map{
+        width: 100%; height: 450px;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .t_map>iframe{
+    display: block;
+    margin: 10px auto;
+    height: 370px;
+    }
+
+    .address>h2{
+        font-size: 16px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .intro_dw_wrap{
+        width: 100%;
+    }
+
+    .intro_dw{
+        margin: none;
+    }
+
+    .intro_dw>div{
+        width: 20%;
+        margin: 0 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .time>img{
+        width: 38px; height: 38px;
+    }
+    
+    .phone>img{
+        width: 38px; height: 38px;
+    }
+    
+    .how>img{
+        width: 38px; height: 38px;
+    }
+    
+    .ask>img{
+        width: 38px; height: 38px;
+    }
+    
+    .intro_dw>div>p{
+        font-size: 16px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    .intro_dw .up2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}
+
+
+
+    @media only screen and (max-width: 768px) {
+    
+        main{
+            width: 100%;
+        }
+    
+        .intro>h2{
+            padding: 0 23px 10px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+    
+        .intro>div{
+            width: 730px; height: 45px;
+            border: 1px solid #fff;
+            margin: 0 5px 5px;
+        }
+    
+        .intro>div>ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .intro>div>ul>li>a{
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    
+        .intro>div>ul>li>.plus{
+            display: block;
+            font-size: 14px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+    
+        .text>h3{
+            font-size: 14px;
+        }
+        
+        .text>h2{
+            font-size: 16px;
+        }
+    
+        .image{
+         display: block;
+        }
+    
+        .up_text_wrap{
+            width: 100%; height: auto;
+        }
+        
+        .up_text_wrap>.up_text{
+            width: 100%;
+        }
+        
+        .up_text_wrap>div>p{
+            font-size: 16px;
+        }
+    
+        .up_text_wrap .up1{
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        .up_img>div{
+            width: 150px; height: 150px;
+            margin: 5px 0;
+        }
+    
+        .dw_text_wrap{
+            width: 100%; height: auto;
+        }
+    
+        .dw_text{
+            width: 100%;
+        }
+    
+        .dw_text_wrap>div>p{
+            width: 100%;
+        }
+        
+        .dw_text_wrap .up1{
+            width: 100%;
+            font-size: 16px;
+        }
+    
+        .dw_img>div{
+            width: 150px; height: 150px;
+            margin: 5px 0;
+        }
+        
+        .road{
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        
+        .road h2{
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    
+        .map_wrap{
+           /* width: 100%;
+            margin: 20px auto;*/
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .map{
+            width: 100%; height: 450px;
+           /* margin: 20px auto;*/
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        .address>h2{
+            font-size: 14px;
+            margin-top: 18px;
+            padding-top: 18px;
+            box-sizing: border-box;
+        }
+    
+        .intro_dw{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .intro_dw>div{
+            width: calc(50% - 20px);
+            margin: 0 10px;
+        }
+        
+        .time>img{
+            width: 32px; height: 32px;
+        }
+        
+        .phone>img{
+            width: 32px; height: 32px;
+        }
+        
+        .how>img{
+            width: 32px; height: 32px;
+        }
+        
+        .ask>img{
+            width: 32px; height: 32px;
+        }
+    
+        .intro_dw>div>p{
+            font-size: 13px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        
+        .intro_dw .up2{
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+    
+    /**** max-width: 768px  ******/
+}

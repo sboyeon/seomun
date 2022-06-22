@@ -1,0 +1,41 @@
+
+        <section>
+            <h2>공지사항 작성</h2>
+            <% if(typeof errs !== 'undefined') { %>
+                <% errs.forEach((err) => { %>  <!--err 원래 없음-->
+                    <h3><%=err.param%> : <%=err.msg%></h3>
+                <%})%>
+            <%}%>
+            <form method="POST" action="/store">
+                <table class="noWrite_tb">
+                    <tr>
+                        <td class="noWrite_td"><label>제목 : </label></td>
+                        <td class="noWrite_ipt"><input type="text" id="nt_title" name="content"></td>
+                    </tr>
+                    <tr>
+                        <td class="noWrite_td"><label>이름 : </label></td>
+                        <td class="noWrite_ipt"><input type="text" id="nt_name"></td>
+                    </tr>
+                    <tr>
+                        <td class="noWrite_td"><label>비밀번호 : </label></td>
+                        <td class="noWrite_ipt"><input type="password" id="nt_password"></td>
+                    </tr>
+                    <tr>
+                        <td class="noWrite_td"><label>작성일자 : </label></td>
+                        <td class="noWrite_ipt"><input type="text" placeholder="YYYY-MM-DD" id="nt_date"></td>
+                    </tr>
+                    <tr>
+                        <td class="noWrite_td">내용 작성 : </td>
+                        <td class="noWrite_ipt"><textarea id="nt_content" rows="4" cols="40"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="noWrite_td">첨부파일 : </td>
+                        <td class="noWrite_ipt"><input type="button" value="파일첨부" id="nt_llist"></td>
+                    </tr>
+                </table>
+                <div>
+                    <input type="submit" value="submit">
+                    <input type="button" value="back" onclick="javascript:location.href='/notice'">
+                </div>
+            </form>
+        </section>

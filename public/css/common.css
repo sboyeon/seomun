@@ -1,0 +1,332 @@
+header{
+    height: 79px;
+    background-color: #4D3494;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrap{
+    width: 1440px; height: 50px;
+    margin: auto;  /*안에 박스를 가둬두기 위해 필요함(반응형 했을 때 영역 제한하기 위해서)*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*한줄이라 align-items, 여러줄이면 align-content*/
+}
+
+.header_wrap>h1{
+    width: 255px; height: 34px;
+    padding: 5px auto;
+    margin: auto 20px;
+    box-sizing: border-box;
+}
+
+h1>a{
+    display: block;
+    width: 255px; height: 34px;
+    background-image: url(../img/logo_nw.png);
+    background-size: 100% 100%;
+}
+
+nav>.h_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>.h_1>li>a{
+    margin: 0 10px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header_wrap>.h_2{
+    width: 255px;
+    display: flex;
+}
+
+.h_2{
+    display: flex;
+}
+
+.h_2>li>a{
+    font-size: 15px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.btn_nav{
+    display: none;
+}
+
+.btn_nav>span{
+    display: block;
+    width: 40px; height: 3px;
+    background-color: #333;
+    margin: 5px 10px;
+}
+
+footer{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.footer_wrap{
+    width: 1440px;
+    margin: auto;
+}
+
+.footer_wrap>div{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.f_cs>ul{
+    display: flex;
+    font-size: 15px;
+    color: #7e868c;
+}
+
+.f_cs>ul>li{
+    padding: 10px;
+}
+
+.f_cs>ul>li>span{
+    color:  #4e546f;
+}
+
+.address>ul>li>a{
+    display: block;
+    color: #7e868c;
+}
+
+.address>ul>li>a>span{
+    color:  #4e546f;
+}
+
+.address>ul{
+    display: flex;
+    font-size: 15px;
+    color: #7e868c;
+}
+
+.address>ul>li{
+    padding: 10px;
+}
+
+.m_block, .f_info>p{
+    font-size: 15px;
+    color: #777777;
+    padding: 10px;
+}
+
+.m_block_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.m_block span{
+    font-size: 15px;
+    color:  #4e546f;
+}
+
+.m_block_sns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.m_block_sns img{
+    width: 32px; height: 32px;
+    margin-left: 13px;
+}
+
+.f_info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #4e546f;
+}
+
+.f_info>div{
+    display: flex;
+    align-items: center;
+}
+
+.f_info>div a{
+    display: inline-block;
+    margin-left: 3px;
+    color: #777777;
+}
+
+
+
+@media only screen and (max-width: 1217px){
+
+    .header_wrap{
+        width: 100%;
+    }
+
+    h1>a{
+        width: 140px; height: 23px;
+    }
+
+    .btn_nav{
+        display: none;
+    }
+ 
+    nav>.h_1>li>a{
+        margin: 0 8px;
+        font-size: 14px;
+        padding: 5px;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    .h_2>li>a{
+        font-size: 11px;
+        text-align: center;
+        padding: 5px; /*3px*/
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    
+    .footer_wrap{
+        width: 100%;
+        padding: 35px 0px 15px;
+        box-sizing: border-box;
+    }
+
+    .footer_wrap>div{
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .f_cs>ul{
+        font-size: 14px;
+    }
+
+    .f_cs>ul>li{
+        padding: 18px;
+    }
+
+    .address>ul{
+        font-size: 14px;
+    }
+
+    .address>ul>li{
+        padding: 18px;
+    }
+
+    .m_block>p{
+        font-size: 14px;
+        padding: 18px;
+    }
+
+    .m_block span{
+        font-size: 14px;
+    }
+
+    .m_block_sns>img{
+        width: 30px; height: 30px;
+        margin-left: 12px;
+    }
+
+    .f_info{
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .dis_none{
+        display: none;
+    }
+
+    .header_wrap{
+        width: 100%; height: 70px;
+    }
+
+    h1>a{
+        width: 169px; height: 28px;
+    }
+
+    .btn_nav{
+        display: block;
+    }
+
+    nav>.h_1{
+        display: none;
+    }
+    
+    .header_wrap>.login{
+        display: none;
+    }
+
+    .footer_wrap{
+        width: 100%;
+        padding: 30px 0 30px 0;
+        box-sizing: border-box;
+    }
+    
+    .footer_wrap>div{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .f_cs>ul{
+        font-size: 12px;
+    }
+    
+    .f_cs>ul>li{
+        padding: 15px;
+    }
+   
+    .address>ul{
+        font-size: 12px;
+    }
+    
+    .address>ul>li{
+        padding: 15px;
+    }
+    
+    .m_block, .f_info>p{
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    .m_block span{
+        font-size: 12px;
+    }
+
+    .m_block_sns{
+        align-items: flex-end;
+    }
+
+    .m_block_sns>img{
+        width: 28px; height: 28px;
+        margin-left: 11px;
+    }
+
+    .f_info{
+        display: block;
+        font-size: 12px;
+    }
+    
+    .f_info>div a{
+        padding: 15px;
+        margin-right: 3px;
+    }
+
+
+}
