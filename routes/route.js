@@ -93,20 +93,10 @@ router.post('/updateBoard',
 });
 
 
-
-
-// router.get('/notice_read', (req, res) => {
-//     res.render('notice_read');
-
-//     db.getListBoard((rows) => {
-//         res.render('notice_read', {rows : rows})  
-//     });
-// });
-
 router.get('/notice_read', function(req, res) {
     let id = req.query.id;
 
-    db.getpageByid(id, (row)=>{
+    db.getListBoard(id, (row)=>{
         if(typeof id === 'undefined' || row.length <= 0){
             res.status(404).json({error:'undefind memo'});
         } else {

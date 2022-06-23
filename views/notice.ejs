@@ -39,7 +39,7 @@
                 <% rows.forEach((row, index) => { %>
                     <tr class="tb_notice">
                         <th class="num"><%= row.id%></th>
-                        <th class="subject"><a onclick="javascript:location.href='/notice_read?id=<%=row.id%>'"><%= row.content%></a></th>
+                        <th class="subject"><a onclick="javascript:location.href='/notice_read?id=<%=row.id%>'"><%= row.title%></a></th>
                         <td class="name"><%= row.writer%></td>
                         <td class="date dis_none"><%= row.DATE%></td>
                         <td class="look de_none dis_none"><%= row.view%></td>

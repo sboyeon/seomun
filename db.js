@@ -55,14 +55,6 @@ function deleteBoardById(id, callback) {
 }
 
 //상세페이지 불러오는 함수
-// function getListBoard(callback) {
-//     connection.query(`SELECT * FROM board ORDER BY id DESC`, (err, rows, fields) => {
-//         if(err) throw err;
-//         callback(rows);
-//     });
-// }
-
-//id값이 일치한 값의 모든 값을 가져오는 함수
 function getListBoard(id, callback){
     connection.query(`SELECT * FROM board WHERE id = '${id}'`, (err, row, fields) =>{
         if(err) throw err;
