@@ -26,12 +26,12 @@
                         </li>
                         <li class="look">
                             <img src="img/64873.png">
-                            416회
+                            <%= row.view%>
                         </li>
                     </ul>
                     <span class="clock">
                         <img src="img/clock.png">
-                        22-03-24 18:54
+                        <%= row.DATE%>
                     </span>
                 </div>
             </article>
@@ -63,7 +63,7 @@
             <form>
                 <input type="hidden" name="id" value="<%=row.id%>">
                 <div class="txt">
-                    <p><%= row.content%></p>
+                    <p style="white-space: pre-line;"><%= row.content%></p>
                 </div>
             </form>
             <article class="but">

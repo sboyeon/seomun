@@ -1,12 +1,6 @@
         <section>
             <h2>공지사항 수정</h2>
-            <% if(typeof errs !== 'undefined') { %>
-                <% errs.forEach((err) => { %>  <!--err 원래 없음-->
-                    <h3><%=err.param%> : <%=err.msg%></h3>
-                <%})%>
-            <%}%>
             <form method="POST" action="/store">
-                <input type="hidden" name="id" value="<%=row.id%>">
                 <table class="noWrite_tb">
                     <tr>
                         <td class="noWrite_td"><label>제목 : </label></td>
@@ -20,10 +14,7 @@
                         <td class="noWrite_td"><label>비밀번호 : </label></td>
                         <td class="noWrite_ipt"><input type="password" id="nt_password" name="password"></td>
                     </tr>
-                    <tr>
-                        <td class="noWrite_td"><label>작성일자 : </label></td>
-                        <td class="noWrite_ipt"><input type="text" placeholder="YYYY-MM-DD" id="nt_date" name="DATE"></td>
-                    </tr>
+                    
                     <tr>
                         <td class="noWrite_td">내용 작성 : </td>
                         <td class="noWrite_ipt"><textarea id="nt_content" rows="4" cols="40" name="content"></textarea></td>

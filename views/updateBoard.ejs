@@ -20,13 +20,12 @@
                     <td class="noWrite_td"><label>비밀번호 : </label></td>
                     <td class="noWrite_ipt"><input type="password" id="nt_password" name="password" value="<%=row.password%>"></td>
                 </tr>
-                <tr>
-                    <td class="noWrite_td"><label>작성일자 : </label></td>
-                    <td class="noWrite_ipt"><input type="text" placeholder="YYYY-MM-DD" id="nt_date" name="DATE" value="<%=row.DATE%>"></td>
-                </tr>
+                
                 <tr>
                     <td class="noWrite_td">내용 작성 : </td>
-                    <td class="noWrite_ipt"><textarea id="nt_content" rows="4" cols="40" name="content" value="<%=row.content%>></textarea></td>
+                    <td class="noWrite_ipt">
+                        <textarea id="nt_content" rows="4" cols="40" name="content"><%=row.content%></textarea>
+                    </td>
                 </tr>
                 <tr>
                     <td class="noWrite_td">첨부파일 : </td>
@@ -39,3 +38,4 @@
             </div>
         </form>
     </section>
+

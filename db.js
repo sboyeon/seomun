@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
     host: 'us-cdbr-east-05.cleardb.net',
     user: 'b231e8080c657a',
     password: '56ac674b',
-    port: 3306,
+    port: '3306',
     database: 'heroku_f1f3904780a8ce1',
     dateStrings: 'date' //dateString은 날짜 시간 출력
     //원래는 이렇게 쓰면 안 되고 다른데에 옮긴 후 연결하는 방식으로 해야 함
@@ -38,8 +38,8 @@ function getBoardById(id, callback) {
 
 
 //리스트를 수정하고 싶을 때 id값이 일치하는 부분을 수정하는 함수
-function updateBoardById(id, title, writer, DATE, view, password, content, callback) {
-    connection.query(`UPDATE board set title='${title}', DATE = now(), writer='${writer}', DATE = now(), view='${view}', password='${password}', content='${content}', WHERE id=${id}`, (err, result) => {
+function updateBoardById(id, title, writer, password, content, callback) {
+    connection.query(`UPDATE board set title='${title}', writer='${writer}', password='${password}', content='${content}' WHERE id=${id}`, (err, result) => {
         if(err) throw err;
         callback();
     });

@@ -22,11 +22,14 @@ header{
     box-sizing: border-box;
 }
 
-h1>a{
+h1>a {
     display: block;
-    width: 255px; height: 34px;
+    width: 255px;
+    height: 34px;
     background-image: url(../img/logo_nw.png);
-    background-size: 100% 100%;
+    background-size: AUTO 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 nav>.h_1{

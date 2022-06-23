@@ -39,7 +39,7 @@ router.get('/notice_write', function(req, res){
     res.render('notice_write');
   });
 
-  router.post('/store', check('title').isLength({min: 1, max: 500}),
+  router.post('/store', [check('title').isLength({min: 1, max: 500})],
   function (req, res, next) {
       let errs = validationResult(req);
       console.log(req.body);
@@ -48,14 +48,13 @@ router.get('/notice_write', function(req, res){
           res.render('notice_write', {errs:errs['errors']});
       } else {
           let param = JSON.parse(JSON.stringify(req.body));
-         
           let title = param['title'];
           let writer = param['writer'];
           let DATE = param['DATE'];
           let view = param['view'];
           let password = param['password'];
           let content = param['content'];
-          db.insertBoard(title, writer, DATE, view, password, content, () => {
+          db.insertBoard(title, writer,DATE, view, password, content, () => {
               res.redirect('/notice');
           });
       }
@@ -81,16 +80,14 @@ router.post('/updateBoard',
         let id = param['id'];
         let title = param['title'];
         let writer = param['writer'];
-        let DATE = param['DATE'];
-        let view = param['view'];
         let password = param['password'];
         let content = param['content'];
         if (errs['errors'].length>0) {
-            db.getBoardById(id, title, writer, DATE, view, password, content, (row) => { //유효성 검사에 적합하지 않으면 정보를 다시 조회 후, updateMemo 페이지를 다시 랜더링한다.
+            db.getBoardById(id, (row) => { //유효성 검사에 적합하지 않으면 정보를 다시 조회 후, updateMemo 페이지를 다시 랜더링한다.
                 res.render('updateBoard', {row:row[0], errs:errs['errors']});
             });
         } else {
-            db.updateBoardById(id, title, () => {   //12번줄 db.getAllBoard((rows)랑 같은 말
+            db.updateBoardById(id, title, writer, password, content, () => {   //12번줄 db.getAllBoard((rows)랑 같은 말
                 res.redirect('/notice');
             });
         }
