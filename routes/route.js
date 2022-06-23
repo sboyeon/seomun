@@ -39,7 +39,7 @@ router.get('/notice_write', function(req, res){
     res.render('notice_write');
   });
 
-  router.post('/store', check('content').isLength({min: 1, max: 500}),
+  router.post('/store', check('title').isLength({min: 1, max: 500}),
   function (req, res, next) {
       let errs = validationResult(req);
       console.log(req.body);
@@ -49,8 +49,8 @@ router.get('/notice_write', function(req, res){
       } else {
           let param = JSON.parse(JSON.stringify(req.body));
          
-          let content = param['content'];
-          db.insertBoard(content, () => {
+          let title = param['title'];
+          db.insertBoard(title, () => {
               res.redirect('/notice');
           });
       }
@@ -69,18 +69,18 @@ router.get('/notice_write', function(req, res){
 });
 
 router.post('/updateBoard',
-    [check('content').isLength({min: 1, max: 500})],
+    [check('title').isLength({min: 1, max: 500})],
     (req, res) => {
         let errs = validationResult(req);
         let param = JSON.parse(JSON.stringify(req.body));
         let id = param['id'];
-        let content = param['content'];
+        let title = param['title'];
         if (errs['errors'].length>0) {
             db.getBoardById(id, (row) => { //유효성 검사에 적합하지 않으면 정보를 다시 조회 후, updateMemo 페이지를 다시 랜더링한다.
                 res.render('updateBoard', {row:row[0], errs:errs['errors']});
             });
         } else {
-            db.updateBoardById(id, content, () => {   //12번줄 db.getAllBoard((rows)랑 같은 말
+            db.updateBoardById(id, title, () => {   //12번줄 db.getAllBoard((rows)랑 같은 말
                 res.redirect('/notice');
             });
         }

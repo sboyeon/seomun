@@ -169,14 +169,17 @@
     color: #000;
 }
 
-.but>a{
-    width: 1440px;
-    margin: 30px auto; 
+.but {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.but input{
+.but>a{
+    width: 42px;
+    margin: 30px 0; 
+    cursor: pointer;
     margin-right: 5px;
     border-radius: 2px;
     padding: 7px;
@@ -185,6 +188,7 @@
     color: #333;
     text-align: center;
 }
+
 
 footer{
     width: 100%;

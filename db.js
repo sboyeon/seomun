@@ -21,8 +21,8 @@ function getAllBoard(callback) {
 }
 
 //리스트에 새로운 내용을 추가하는 함수
-function insertBoard(content, callback) {
-    connection.query(`INSERT INTO board(content, writer, DATE, view) VALUES('${content}', '마스터', now(), '0')`, (err, result) => {
+function insertBoard(title, callback) {
+    connection.query(`INSERT INTO board(title, writer, DATE, view) VALUES('${title}', '마스터', now(), '0')`, (err, result) => {
         if(err) throw err;
         callback();
     });
@@ -38,8 +38,8 @@ function getBoardById(id, callback) {
 
 
 //리스트를 수정하고 싶을 때 id값이 일치하는 부분을 수정하는 함수
-function updateBoardById(id, content, callback) {
-    connection.query(`UPDATE board set content='${content}', DATE = now() WHERE id=${id}`, (err, result) => {
+function updateBoardById(id, title, callback) {
+    connection.query(`UPDATE board set title='${title}', DATE = now() WHERE id=${id}`, (err, result) => {
         if(err) throw err;
         callback();
     });

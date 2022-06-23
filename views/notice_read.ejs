@@ -16,7 +16,7 @@
         <section class="notice">
             <h2>공지사항</h2>
             <article class="nav">
-                <p>서문·칠성야시장 매대운영자 모집공고</p>
+                <p><%= row.title%></p>
                 <div>
                     <ul>
                         <li class="master">마스터</li>
@@ -63,19 +63,11 @@
             <form>
                 <input type="hidden" name="id" value="<%=row.id%>">
                 <div class="txt">
-                    <p><%= row.title%></p>
-                    <p><%= row.content%></p>
+                    <p></p>
+                    <p></p>
                 </div>
             </form>
             <article class="but">
-                <a href="">
-                    <div>
-                        <input type="button" value="이전글">
-                        <input type="button" value="다음글">
-                    </div>
-                    <div>
-                        <input type="button" value="목록">
-                    </div>
-                </a>
+                <a href="/notice" >목록</a>
             </article>
     </section>
