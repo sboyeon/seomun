@@ -50,7 +50,12 @@ router.get('/notice_write', function(req, res){
           let param = JSON.parse(JSON.stringify(req.body));
          
           let title = param['title'];
-          db.insertBoard(title, () => {
+          let writer = param['writer'];
+          let DATE = param['DATE'];
+          let view = param['view'];
+          let password = param['password'];
+          let content = param['content'];
+          db.insertBoard(title, writer, DATE, view, password, content, () => {
               res.redirect('/notice');
           });
       }
@@ -75,8 +80,13 @@ router.post('/updateBoard',
         let param = JSON.parse(JSON.stringify(req.body));
         let id = param['id'];
         let title = param['title'];
+        let writer = param['writer'];
+        let DATE = param['DATE'];
+        let view = param['view'];
+        let password = param['password'];
+        let content = param['content'];
         if (errs['errors'].length>0) {
-            db.getBoardById(id, (row) => { //유효성 검사에 적합하지 않으면 정보를 다시 조회 후, updateMemo 페이지를 다시 랜더링한다.
+            db.getBoardById(id, title, writer, DATE, view, password, content, (row) => { //유효성 검사에 적합하지 않으면 정보를 다시 조회 후, updateMemo 페이지를 다시 랜더링한다.
                 res.render('updateBoard', {row:row[0], errs:errs['errors']});
             });
         } else {
@@ -96,6 +106,7 @@ router.post('/updateBoard',
 router.get('/notice_read', function(req, res) {
     let id = req.query.id;
 
+    db.countView(id); //조회수 추가
     db.getListBoard(id, (row)=>{
         if(typeof id === 'undefined' || row.length <= 0){
             res.status(404).json({error:'undefind memo'});

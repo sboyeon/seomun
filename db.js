@@ -14,15 +14,15 @@ const connection = mysql.createConnection({
 
 //리스트 전체를 불러오는 함수
 function getAllBoard(callback) {
-    connection.query(`SELECT * FROM board ORDER BY id DESC`, (err, rows, fields) => {
+    connection.query(`SELECT * FROM(SELECT *, @rownum:=@rownum+1 AS RNUM FROM board, (SELECT @rownum :=0) AS R ORDER BY id ASC) SUB ORDER BY id DESC`, (err, rows, fields) => {
         if(err) throw err;
         callback(rows);  //모든 줄들을 받아오게 지정(표 3줄)
     });
 }
 
 //리스트에 새로운 내용을 추가하는 함수
-function insertBoard(title, callback) {
-    connection.query(`INSERT INTO board(title, writer, DATE, view) VALUES('${title}', '마스터', now(), '0')`, (err, result) => {
+function insertBoard(title, writer, DATE, view, password, content, callback) {
+    connection.query(`INSERT INTO board(title, writer, DATE, view, password, content) VALUES('${title}', '${writer}', now(), '${view}', '${password}', '${content}')`, (err, result) => {
         if(err) throw err;
         callback();
     });
@@ -38,8 +38,8 @@ function getBoardById(id, callback) {
 
 
 //리스트를 수정하고 싶을 때 id값이 일치하는 부분을 수정하는 함수
-function updateBoardById(id, title, callback) {
-    connection.query(`UPDATE board set title='${title}', DATE = now() WHERE id=${id}`, (err, result) => {
+function updateBoardById(id, title, writer, DATE, view, password, content, callback) {
+    connection.query(`UPDATE board set title='${title}', DATE = now(), writer='${writer}', DATE = now(), view='${view}', password='${password}', content='${content}', WHERE id=${id}`, (err, result) => {
         if(err) throw err;
         callback();
     });
@@ -62,11 +62,18 @@ function getListBoard(id, callback){
     })
 }
 
+//게시글 클릭마다 조회수 카운트 함수
+function countView(id) {
+    connection.query(`UPDATE board SET view = view+ 1 WHERE id = ${id}`);
+}
+
+
 module.exports = {
     getAllBoard,
     insertBoard, 
     getBoardById,
     updateBoardById,
     deleteBoardById,
-    getListBoard
+    getListBoard,
+    countView
 }
