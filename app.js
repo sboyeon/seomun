@@ -6,6 +6,12 @@ var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
 const app = express();
 const port = 3000;
+const http = require('https');
+
+setInterval(function () {
+    http.get('https://seomun-boyeon.herokuapp.com/notice')
+}, 600000);             //1초=1000 1분=60초 따라서 1분이면 60000초  10분이면 600000
+
 
 const homes = require('./routes/route.js');
 

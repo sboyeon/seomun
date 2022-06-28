@@ -7,8 +7,7 @@ const connection = mysql.createConnection({
     password: '56ac674b',
     port: '3306',
     database: 'heroku_f1f3904780a8ce1',
-    dateStrings: 'date' //dateString은 날짜 시간 출력
-    //원래는 이렇게 쓰면 안 되고 다른데에 옮긴 후 연결하는 방식으로 해야 함
+    dateStrings: 'date'
 })
 
 
