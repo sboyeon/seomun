@@ -1,8 +1,22 @@
 
 
-        <section class="t_img">
-            <h2>사랑하는 가족 연인 친구와 함께 즐기는 <span>대한민국 대표 야시장</span>
-                <p>‘서문시장 야시장’  대구와 함께라면 그날이 곧 <span>파티다!</span></p></h2>
+        <section class="index_t_img">
+            <article class="swiper mySwiper slid_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide_img">
+                        <img src="../img/photo-1612094994555-ee42dcdd3d86.avif">
+                    </div>
+                    <div class="swiper-slide slide_img">
+                        <img src="../img/istockphoto-501879234-612x612.jpg">
+                    </div>
+                    <div class="swiper-slide slide_img">
+                        <img src="../img/background7.jpg">
+                    </div>
+                </div>
+                <h2>사랑하는 가족 연인 친구와 함께 즐기는 <span>대한민국 대표 야시장</span>
+                <p>‘서문시장 야시장’  대구와 함께라면 그날이 곧 <span>파티다!</span></p>
+                </h2>
+            </article>
         </section>
         <section class="vedio_wrap">
             <div class="txt">
@@ -162,5 +176,21 @@
                 </ul>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            });
+        </script>
 
  

@@ -1,4 +1,4 @@
-.intro{
+.notice_read_intro{
     width: 100%; height: 431px;
     position: relative;
     display: flex;
@@ -10,7 +10,7 @@
     background-position: center center;
 }
 
-.intro>h2{
+.notice_read_intro>h2{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%);
@@ -23,16 +23,16 @@
     box-sizing: border-box;
 }
 
-.intro>div{
+.notice_read_intro>div{
     width: 665px;
 }
 
-.intro>div>ul{
+.notice_read_intro>div>ul{
     display: flex;
     justify-content: space-between;
 }
 
-.intro>div>ul>li>a{
+.notice_read_intro>div>ul>li>a{
     margin: 10px auto;
     color: #fff;
     font-size: 15px;
@@ -45,7 +45,7 @@
     display: none;
 }
 
-.notice>h2{
+.notice_read_notice>h2{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -55,7 +55,7 @@
     box-sizing: border-box;
 }
 
-.nav{
+.notice_read_nav{
     width: 1440px;
     margin: auto;
     align-content: center;
@@ -64,23 +64,23 @@
     border-bottom: 1px solid #777777;
 }
 
-.nav>p{
+.notice_read_nav>p{
     font-size: 25px;
     font-weight: bold;
     margin: 5px 0 10px;
     text-align: left;
 }
 
-.nav>div{
+.notice_read_nav>div{
     display: flex;
     justify-content: space-between;
 }
 
-.nav ul{
+.notice_read_nav ul{
     display: flex;
 }
 
-.nav ul>li{
+.notice_read_nav ul>li{
     margin-right: 20px;
 }
 
@@ -121,7 +121,7 @@
     width: 18px; height: 18px;
 }
 
-.file{
+.notice_read_file{
     width: 1440PX;
     margin: auto;
     padding: 0 10px;
@@ -130,26 +130,26 @@
     background: #f5f6fa;
 }
 
-.file li{
+.notice_read_file li{
     margin-bottom: 10px;
 }
 
-.file a{
+.notice_read_file a{
     display: block;
 }
 
-.file a>p{
+.notice_read_file a>p{
     color: #000;
     font-weight: bold;
 }
 
-.file a>span{
+.notice_read_file a>span{
     margin: 0 0 3px 16px;
     color: #444;
     font-size: 14px;
 }
 
-.txt>div{
+.notice_read_txt>div{
     width: 1440px;
     margin: auto;
     line-height: 3;
@@ -157,26 +157,26 @@
     box-sizing: border-box;
 }
 
-.txt p{
+.notice_read_txt p{
     font-size: 12pt;
     margin-bottom: 15px;
 }
 
-.txt span{
+.notice_read_txt span{
     display: inline-block;
     font-weight: bold;
     font-size: 20px;
     color: #000;
 }
 
-.but {
+.notice_read_but {
     max-width: 1440px;
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
 
-.but>a{
+.notice_read_but>a{
     width: 42px;
     margin: 30px 0; 
     cursor: pointer;
@@ -287,19 +287,19 @@ footer{
 
 @media only screen and (max-width: 1217px) {
 
-    .nav{
+    .notice_read_nav{
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
         margin: 0 5px;
     }
     
-    .nav>p{
+    .nanotice_read_nav>p{
         font-size: 22px;
         margin: 5px 0 10px;
     }
     
-    .nav ul>li{
+    .notice_read_nav ul>li{
         margin-right: 18px;
     }
     
@@ -327,37 +327,37 @@ footer{
         font-size: 16px;
     }
 
-    .file{
+    .notice_read_file{
         width: 100%;
         padding: 0 10px;
         box-sizing: border-box;
         margin: 0 5px;
     }
 
-    .file a>span{
+    .notice_read_file a>span{
         margin: 0 0 3px 16px;
         color: #444;
         font-size: 14px;
     }
 
-    .txt>div{
+    .notice_read_txt>div{
         width: 100%;
         line-height: 3;
         padding: 20px;
         box-sizing: border-box;
     }
     
-    .txt span{
+    .notice_read_txt span{
         font-size: 20px;
     }
     
-    .but{
+    .notice_read_but{
         width: 100%;
         padding-bottom: 40px;
         margin-left: 5px;
     }
     
-    .but input{
+    .notice_read_but input{
         margin-right: 5px;
         padding: 7px;
     }
@@ -415,18 +415,18 @@ footer{
 
 @media only screen and (max-width: 768px) {
 
-    .nav{
+    .notice_read_nav{
         width: 100%;
         padding: 20px;
         margin: 0 5px;
     }
     
-    .nav>p{
+    .notice_read_nav>p{
         font-size: 21px;
         margin: 5px 0 10px;
     }
     
-    .nav ul>li{
+    .nanotice_read_nav ul>li{
         margin-right: 20px;
     }
     
@@ -458,7 +458,7 @@ footer{
         width: 18px; height: 18px;
     }
 
-    .file{
+    .notice_read_file{
         width: 100%;
     }
 
@@ -468,17 +468,17 @@ footer{
         box-sizing: border-box;
     }
     
-    .txt span{
+    .notice_read_txt span{
         font-size: 18px;
     }
     
-    .but{
+    .notice_read_but{
         width: 100%;
         padding-bottom: 35px;
         margin-left: 5px;
     }
     
-    .but input{
+    .notice_read_but input{
         padding: 7px;
     }
 

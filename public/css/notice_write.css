@@ -1,4 +1,4 @@
-h2{
+.notice_write>h2{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -7,7 +7,7 @@ h2{
     box-sizing: border-box;
 }
 
-form{
+.notice_write>form{
     width: 1440px;
     margin: auto;
     padding: 30px;
@@ -43,11 +43,12 @@ form{
     width: 300px; height: 30px;
 }
 
-form>div{
-    justify-content: center;
+.notice_write_inputs{
+    display: flex;
+    justify-content: flex-end;
 }
 
-form>div>input{
+.notice_write_inputs>input{
     width: 100px;
     text-align: center;
     line-height: 30px;
@@ -64,19 +65,19 @@ form>div>input{
 
 @media only screen and (max-width: 1580px){
 
-    section{
+    .notice_write{
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    h2{
+    .notice_write>h2{
         font-size: 23px;
         padding: 20px auto;
         box-sizing: border-box;
     }
 
-    form{
+    .notice_write>form{
         width: 100%;
     }
 
@@ -103,7 +104,7 @@ form>div>input{
         max-width: 230px;
     }
 
-    form>div>input{
+    .notice_write_inputs>input{
         width: 100px;
         text-align: center;
         line-height: 30px;
@@ -121,29 +122,29 @@ form>div>input{
 
 @media only screen and (max-width: 768px) {
 
-    section{
+    .notice_write{
         width: 100%;
         padding: 18px;
         box-sizing: border-box;
     }
     
-    h2{
+    .notice_write>h2{
         font-size: 21px;
         padding: 20px auto;
         box-sizing: border-box;
         margin-bottom: 30px;
     }
     
-    form{
+    .notice_write>form{
         width: 100%;
     }
     
-    table{
+    .noWrite_tb{
         width: 100%;
         text-align: center;
     }
     
-    td{
+    .noWrite_tb td{
         padding: 20px 10px;
     }
 

@@ -1,24 +1,54 @@
-.t_img{
-    height: 890px;
-    background-image: url(../img/background7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.index_t_img{
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
 }
 
-.t_img>h2{
+.slide_img img{
+    width: 100%;
+}
+
+.swiper{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.index_t_img h2{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     align-items: center;
-    color: #fff;
+    color: #1C1C1C;
     padding-top: 10%;
+    position: absolute;
+    top: -13px;left: 50%;
+    transform: translate(-50%, -13px);
+    z-index: 99;
 }
 
-.t_img>h2>p{
-    padding-top: 15px;
-}
-
-.t_img>h2>span{
+.index_t_img h2>span{
     color: #FF9090;
 }
 
@@ -51,13 +81,13 @@
 }
 
 .up_txt{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
 
 .down_txt{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
@@ -319,16 +349,16 @@ figcaption>p{
 
 @media only screen and (max-width: 1217px){
 
-    .t_img{
+    .index_t_img{
     height: 690px;
     }
 
-    .t_img>h2{
+    .index_t_img>h2{
     font-size: 20px;
     padding-top: 8%;
     }
 
-    .t_img>h2>p{
+    .index_t_img>h2>p{
     padding-top: 15px;
     }
 
@@ -447,16 +477,16 @@ figcaption>p{
 
 @media only screen and (max-width: 768px) {
 
-    .t_img{
+    .index_t_img{
         height: 376px;
     }
     
-    .t_img>h2{
+    .index_t_img>h2{
         font-size: 18px;
         padding-top: 8%;
     }
     
-    .t_img>h2>p{
+    .index_t_img>h2>p{
         padding-top: 10px;
     }
 

@@ -3,23 +3,23 @@ main>h1>a{
     padding: 20px 0;
 }
 
-.content{
+.join_sub_content{
     width: 800px;
     margin: 30px auto 15px;
 }
 
-.menu{
+.join_sub_menu{
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.menu>span{
+.join_sub_menu>span{
     display: inline-block;
     color:  #FF9090;
 }
 
-.content input{
+.join_sub_content input{
     background: #fff;
     outline: 0;
     display: block;
@@ -31,23 +31,23 @@ main>h1>a{
     margin-bottom: 20px;
 }
 
-.content_info{
+.join_sub_content_info{
     display: flex;
     margin-top: 10px;
 }
 
-.content_info>input, select{
+.join_sub_content_info>input, select{
     width: 26%;
     margin-right: 10px;
 }
 
-.month{
+.join_sub_month{
     height: 41px;
     border: 1px solid #dadada;
     color: gray;
 }
 
-.sex{
+.join_sub_sex{
     width: 80%; height: 41px;
     border: 1px solid #dadada;
     color: gray;
@@ -56,17 +56,17 @@ main>h1>a{
     margin-bottom: 20px;
 }
 
-.phone_wrap{
+.join_sub_phone_wrap{
     display: flex;
 }
 
-.phone_wrap>input{
+.join_sub_phone_wrap>input{
     width: 50%;
     margin-right: 38px;
     padding: 10px 15px 10px 14px;
 }
 
-.phone_wrap>button{
+.join_sub_phone_wrap>button{
     width: 25%; height: 41px;
     text-align: center;
     font-size: 15px;
@@ -76,7 +76,7 @@ main>h1>a{
     background-color: #4D3494;
 }
 
-.b_join{
+.join_sub_b_join{
     width: 80%;
     color: #fff;
     border: solid 1px rgba(0,0,0,.08);
@@ -119,18 +119,18 @@ main>h1>a{
         padding: 15px 10px;
     }
     
-    .content{
+    .join_sub_content{
         width: 100%;
         margin: 35px;
     }
 
-    .phone_wrap>input{
+    .join_sub_phone_wrap>input{
         width: 55%;
         margin-right: 38px;
         padding: 10px 15px 10px 14px;
     }
     
-    .phone_wrap>button{
+    .join_sub_phone_wrap>button{
         width: 20%; height: 41px;
         font-size: 15px;
     }
@@ -144,15 +144,15 @@ main>h1>a{
 @media only screen and (max-width: 560px) {
 
     
-    .content_info>input, select{
+    .join_sub_content_info>input, select{
         margin-right: 5px;
     }
 
-    .phone_wrap>input{
+    .join_sub_phone_wrap>input{
         margin-right: 20px;
     }
 
-    .phone_wrap>button{
+    .join_sub_phone_wrap>button{
         font-size: 12px;
     }
 

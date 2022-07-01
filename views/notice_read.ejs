@@ -1,5 +1,5 @@
 
-        <section class="intro">
+        <section class="notice_read_intro">
             <h2>참여마당</h2>
             <div>
                 <ul>
@@ -13,9 +13,9 @@
                 </ul>
             </div>
         </section>
-        <section class="notice">
+        <section class="notice_read_notice">
             <h2>공지사항</h2>
-            <article class="nav">
+            <article class="notice_read_nav">
                 <p><%= row.title%></p>
                 <div>
                     <ul>
@@ -35,7 +35,7 @@
                     </span>
                 </div>
             </article>
-            <article class="file">
+            <article class="notice_read_file">
                 <ul>
                     <li><a href="">
                         <p>서문칠성야시장 매대운영자 모집 공고.hwp</p>
@@ -62,11 +62,11 @@
             <%}%>
             <form>
                 <input type="hidden" name="id" value="<%=row.id%>">
-                <div class="txt">
+                <div class="notice_read_txt">
                     <p style="white-space: pre-line;"><%= row.content%></p>
                 </div>
             </form>
-            <article class="but">
+            <article class="notice_read_but">
                 <a href="/notice" >목록</a>
             </article>
     </section>

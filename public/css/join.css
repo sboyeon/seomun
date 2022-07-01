@@ -1,5 +1,5 @@
 
-.main_img{
+.join_main_img{
     width: 1440px;
     margin: auto;
     display: flex;
@@ -8,7 +8,7 @@
     background-color: lavender;
 }
 
-.main_img>p{
+.join_main_img>p{
     font-size: 32px !important;
     text-align: left;
     padding: 134px 0 0 40px;
@@ -17,7 +17,7 @@
     line-height: 1.2;
 }
 
-.t_txt{
+.join_t_txt{
     width: 1440px;
     margin: auto;
     line-height: 40px;
@@ -25,28 +25,28 @@
     display: flex;
 }
 
-.t_txt>img{
+.join_t_txt>img{
     width: 20px; height: 20px;
     padding: 10px 0 10px 20px ;
 }
 
-.t_txt>ul{
+.join_t_txt>ul{
     display: flex;
     justify-content: flex-start;
 }
 
-.t_txt>ul>li{
+.join_t_txt>ul>li{
     display: block;
     padding: 0 20px;
     font-size: 14px;
     color: #727476;
 }
 
-.join_txt{
+.join_main_txt{
     padding: 25px;
 }
 
-.join_txt>p{
+.join_main_txt>p{
     font-size: 32px;
     font-weight: 500;
     text-align: center;
@@ -54,12 +54,12 @@
     color: #4e4f51;
 }
 
-.join_txt span{
+.join_main_txt span{
     display: inline;
     color: #4D3494;
 }
 
-.ar_txt{
+.join_ar_box{
     line-height: 24px;
     font-size: 14pt;
     margin-bottom: 20px;
@@ -67,7 +67,7 @@
     text-align: center;
 }
 
-.ar_box{
+.join_ar_box{
     border: 3px solid #e1e4e9;
     width: 1200px;
     margin: auto;
@@ -78,7 +78,7 @@
     background: url(../img/pageComment.png) no-repeat 30px 50%;
 }
 
-.ar_box>p{
+.join_ar_box>p{
     font-size: 14px;
     line-height: 21px;
     color: #727476;
@@ -87,20 +87,20 @@
     text-align: left;
 }
 
-.box{
+.join_box{
     width: 1200px;
     margin: 60px auto;
     border: 1px solid #e2e2e4;
     border-top: 2px solid #5b648a;
 }
 
-.box>ul{
+.join_box>ul{
     display: flex;
     padding: 40px 0;
     text-align: center;
 }
 
-.box>ul>li{
+.join_box>ul>li{
     width: 33.333%;
     display: inline-block;
     vertical-align: top;
@@ -109,23 +109,23 @@
     background-position: center bottom;
 }
 
-.box>ul>li>a{
+.join_box>ul>li>a{
     font-weight: 500;
     font-size: 18px;
     color: #292a2d;
 }
 
-.left{
+.join_left{
     border-right: 1px solid #e2e2e4;
     background: url(../img/iconMj01.png) no-repeat;
 }
 
-.middle{
+.join_middle{
     border-right: 1px solid #e2e2e4;
     background: url(../img/iconMj03.png) no-repeat;
 }
 
-.right{
+.join_right{
     background: url(../img/iconMj02.png) no-repeat;
 }
 
@@ -135,36 +135,36 @@
 @media only screen and (max-width: 1217px) {
 
 
-    .main_img{
+    .join_main_img{
         width: 100%;
     }
     
-    .main_img>p{
+    .join_main_img>p{
         font-size: 28px;
         padding: 234px 0 0 40px
     }
     
-    .t_txt{
+    .join_t_txt{
         width:100%;
         line-height: 40px;
     }
     
-    .t_txt>ul a{
+    .join_t_txt>ul a{
         display: block;
         padding: 0 18px;
     }
 
-    .join_txt{
+    .join_main_txt{
         width: 90%;
         padding: 25px;
     }
     
-    .join_txt>p{
+    .join_main_txt>p{
         font-size: 24px;
         padding: 16px 0;
     }
 
-    .ar_txt{
+    .join_ar_txt{
         line-height: 24px;
         font-size: 14pt;
         margin-bottom: 20px;
@@ -172,31 +172,31 @@
         text-align: center;
     }
     
-    .ar_box{
+    .join_ar_box{
         width: 100%;
         padding: 18px 40px;
         box-sizing: border-box;
     }
     
-    .ar_box>p{
+    .join_ar_box>p{
         min-height: 44px;
         padding: 4px 0 4px 90px;
     }
 
-    .box{
+    .join_box{
         width: 100%;
         margin: 55px 0 38px 0;
     }
     
-    .box>ul{
+    .join_box>ul{
         padding: 40px 0
     }
     
-    .box>ul>li{
+    .join_box>ul>li{
         padding-bottom: 80px;
     }
     
-    .box>ul>li>a{
+    .join_box>ul>li>a{
         font-weight: 500;
         font-size: 18px;
     }
@@ -211,21 +211,21 @@
 
 @media only screen and (max-width: 860px) {
 
-    .join_txt>p{
+    .join_main_txt>p{
         font-size: 22px;
         padding: 16px 0;
     }
 
-    .ar_box{
+    .join_ar_box{
         padding: 15px 38px;
         box-sizing: border-box;
     }
 
-    .ar_box>p{
+    .join_ar_box>p{
         font-size: 13px;
     }
 
-    .box>ul{
+    .join_box>ul{
         padding: 35px 0
     }
 
@@ -238,28 +238,28 @@
 
 @media only screen and (max-width: 768px) {
 
-    .join_txt>p{
+    .join_main_txt>p{
         font-size: 15px;
     }
 
-    .ar_box{
+    .join_ar_box{
         padding: 15px 38px;
         box-sizing: border-box;
     }
 
-    .ar_box>p{
+    .join_ar_box>p{
         padding: 4px 0 4px 60px;
     }
 
-    .box{
+    .join_box{
         margin: 50px 0 13px 0;
     }
 
-    .box>ul{
+    .join_box>ul{
         padding: 38px 0
     }
 
-    .box>ul>li{
+    .join_box>ul>li{
         padding-bottom: 60px;
     }
 

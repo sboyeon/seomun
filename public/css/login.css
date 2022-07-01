@@ -1,4 +1,4 @@
-.top_img{
+.login_top_img{
     width: 1440px;
     margin: auto;
     display: flex;
@@ -7,7 +7,7 @@
     background-color: lavender;
 }
 
-.top_img>p{
+.login_top_img>p{
     font-size: 32px !important;
     text-align: left;
     padding: 134px 0 0 40px;
@@ -16,7 +16,7 @@
     line-height: 1.2;
 }
 
-.t_txt{
+.login_t_txt{
     width: 1440px;
     margin: auto;
     line-height: 40px;
@@ -24,17 +24,17 @@
     display: flex;
 }
 
-.t_txt>img{
+.login_t_txt>img{
     width: 20px; height: 20px;
     padding: 10px 0 10px 20px ;
 }
 
-.t_txt>ul{
+.login_t_txt>ul{
     display: flex;
     justify-content: flex-start;
 }
 
-.t_txt>ul a{
+.login_t_txt>ul a{
     display: block;
     padding: 0 20px;
     font-size: 14px;
@@ -47,15 +47,15 @@
     margin-top: 30px;
 }
 
-.tab{
+.login_sub_tab{
     display: flex;
 }
 
-.tab>div{
+.login_sub_tab>div{
     width: 33.333%; height: 60px;
 }
 
-.tab a{
+.login_sub_tab a{
     display: block;
     border-bottom: 1px solid #fff;
     font-size: 18px;
@@ -65,39 +65,39 @@
     cursor: pointer;
 }
 
-.tab_l{
+.login_tab_l{
     border: 2px solid #5b648a;
     border-bottom: 1px solid #e2e2e4;
 }
 
-.tab_r{
+.login_tab_r{
     border: 1px solid #e2e2e4;
 }
 
-.tab_box{
+.login_tab_box{
     width: 1200px; height: 600px;
     padding: 55px 33px;
     box-sizing: border-box;
     display: flex;
 }
 
-.l_box{
+.login_l_box{
     width: 80%;
     text-align: left;
 }
 
-.l_box p{
+.login_l_box p{
     font-size: 22px;
     font-weight: 500;
     color: #292a2d;
     margin-bottom: 40px;
 }
 
-.input{
+.login_l_box_input{
     display: flex;
 }
 
-.input input{
+.login_l_box_input input{
     width: 410px;
     line-height: 40px;
     max-width: 100%;
@@ -111,7 +111,7 @@
     margin-bottom: 20px;
 }
 
-.input>button{
+.login_l_box_input>button{
     margin: 10px 15px;
     width: 120px;
     height: 90px;
@@ -120,19 +120,19 @@
     text-align: center;
 }
 
-.input>button>a{
+.login_l_box_input>button>a{
     color: #fff;
 }
 
-.m_input{
+.login_l_box_m_input{
     display: flex;
 }
 
-.m_input>input{
+.login_l_box_m_input>input{
     margin: 5px;
 }
 
-.m_input>p>a{
+.login_l_box_m_input>p>a{
     font-size: 14px;
     text-align: center;
     padding: 5px 0 0 110px;
@@ -140,20 +140,20 @@
     color: #727476;
 }
 
-.b_input{
+.login_l_box_b_input{
     margin-top: 36px;
     padding-top: 36px;
     border-top: 1px solid #e2e2e4;
 }
 
-.b_input>p{
+.login_l_box_b_input>p{
     font-size: 15px;
     font-weight: bold;
     color: #727476;
     text-align: center;
 }
 
-.b_input>button{
+.login_l_box_b_input>button{
     background: #4171df;
     text-align: center;
     align-items: center;
@@ -162,16 +162,16 @@
     box-sizing: border-box;
 }
 
-.b_input>button>a{
+.login_l_box_b_input>button>a{
     color: #fff;
 }
 
-.l_box ul{
+.login_l_box ul{
     display: flex;
     margin-top: 40px;
 }
 
-.l_box ul a{
+.login_l_box ul a{
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -180,19 +180,19 @@
     color: #434e65;
 }
 
-.input_img1{
+.login_input_img1{
     background: url(../img/ico_ipin.svg) no-repeat 0 center;
     background-size: 22px 22px;
     margin-left: 0;
 }
 
-.input_img2{
+.login_input_img2{
     background: url(../img/ico_kakao.svg) no-repeat 0 center;
     background-size: 22px 22px;
     margin-left: 60px;
 }
 
-.input_img3{
+.login_input_img3{
     background: url(../img/ico_certify02.svg) no-repeat 0 center;
     background-size: 22px 22px;
     margin-left: 60px;
@@ -203,22 +203,22 @@
 
 
 @media only screen and (max-width: 1217px) {
-    .top_img{
+    .login_top_img{
         width: 100%;
         height: 210px;
     }
     
-    .top_img>p{
+    .login_top_img>p{
         font-size: 28px;
         padding: 134px 0 0 40px;
     }
     
-    .t_txt{
+    .login_t_txt{
         width: 100%;
         line-height: 40px;
     }
 
-    .t_txt>ul a{
+    .login_t_txt>ul a{
         display: block;
         padding: 0 18px;
     }
@@ -228,17 +228,17 @@
         margin-top: 30px;
     }
     
-    .tab_box{
+    .login_tab_box{
         width: 100%; height: 600px;
         padding: 55px 33px;
         box-sizing: border-box;
     }
 
-    .l_box{
+    .login_l_box{
         width: 70%;
     }
     
-    .input input{
+    .login_l_box_input input{
         width: 380px;
         line-height: 38px;
         max-width: 100%;
@@ -247,26 +247,26 @@
         margin-bottom: 20px;
     }
     
-    .input>button{
+    .login_l_box_input>button{
         margin: 10px 9px;
         width: 100px;
         height: 80px;
     }
     
-    .b_input{
+    .login_l_box_b_input{
         margin-top: 34px;
         padding-top: 34px;
     }
     
-    .b_input>button{
+    .login_l_box_b_input>button{
         margin-left: 40%;
     }
     
-    .l_box ul{
+    .login_l_box ul{
         margin-top: 40px;
     }
     
-    .l_box ul a{
+    .login_l_box ul a{
         display: block;
         margin-left: 50px;
     }
@@ -279,17 +279,17 @@
 
 @media only screen and (max-width: 860px) {
 
-    .input>button{
+    .login_l_box_input>button{
         width: 120px;
         height: 90px;
         font-size: 15px;
     }
 
-    .l_box ul{
+    .login_l_box ul{
         margin-top: 40px;
     }
     
-    .l_box ul a{
+    .login_l_box ul a{
         display: block;
         font-size: 13px;
         margin-right: 5px;
@@ -305,47 +305,47 @@
 
 @media only screen and (max-width: 768px) {
 
-    .input{
+    .login_l_box_input{
         display: block;
     }
 
-    .input>button{
+    .login_l_box_input>button{
         width: 20%; height: 40px;
         justify-content: center;
         margin-bottom: 20px;
     }
     
-    .m_input>p{
+    .login_l_box_m_input>p{
         font-size: 13px;
         text-align: center;
         padding: 5px 0 0 110px;
     }
 
-    .l_box p{
+    .login_l_box p{
         margin-bottom: 20px;
     }
 
-    .l_box ul{
+    .login_l_box ul{
         margin-top: 30px;
     }
     
-    .l_box ul a{
+    .login_l_box ul a{
         display: block;
         font-size: 13px;
         margin-right: 4px;
         margin-left: 30px;
     }
 
-    .b_input{
+    .login_l_box_b_input{
         margin: 30px 0;
         padding-top: 30px;
     }
     
-    .b_input>p{
+    .login_l_box_b_input>p{
         font-size: 14px;
     }
     
-    .b_input>button{
+    .login_l_box_b_input>button{
         margin-left: 40%;
     }
     
