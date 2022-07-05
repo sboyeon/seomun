@@ -58,7 +58,7 @@ nav>.h_1>li>a{
     display: flex;
 }
 
-.h_2>li>a{
+.h_2>li{
     font-size: 15px;
     margin: 0 10px;
     color: #fff;
