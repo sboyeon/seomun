@@ -168,6 +168,9 @@ footer{
     color: #777777;
 }
 
+#logout {
+    display: none;
+}
 
 
 @media only screen and (max-width: 1217px){
