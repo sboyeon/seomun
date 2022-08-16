@@ -1,0 +1,22 @@
+.moveTopBtn{
+    position: fixed;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    right: 50px; bottom: 94px;
+    box-shadow: 3px 3px 18px 15px rgb(0 0 0 / 5%);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    text-align: center;
+    animation: avia_pop 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -webkit-font-smoothing: antialiased;
+    z-index: 99;
+    cursor: pointer;
+    background: url(../img/3236907.png) center center no-repeat;
+    background-size: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+#container{
+    transition-duration: 1s;
+    opacity: 0;
+}

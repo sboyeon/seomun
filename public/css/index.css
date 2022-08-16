@@ -1,6 +1,6 @@
 .index_t_img{
     height: 890px;
-    background-image: url(../img/background7.jpg);
+    background-image: url(../img/seomun5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,10 +8,10 @@
 .index_t_img>h2{
     font-size: 25px;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     align-items: center;
-    color: #1C1C1C;
-    padding-top: 10%;
+    color: #FFFAF6;
+    padding: 15% 3% 0 0;
 }
 
 .index_t_img>h2>p{
@@ -23,27 +23,12 @@
 }
 
 .txt{
-    margin: 100px auto 30px;
+    /* margin: 100px auto 30px; */
+    margin-top: 10%;
 }
 
-.bnr_dot{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-.bnr_dot>li>a{
-    display: block;
-    width: 14px; height: 14px;
-    border-radius: 20px;
-    margin: 0 5px;
-    border: 2px solid #7d7d7d;
-}
-
-.bnr_dot>.active_dot{
-    border-radius: 50%;
-    margin-right: 8px;
-    background-color: #7d7d7d;
+.txt:last-child{
+    margin-top: 8%;
 }
 
 .de_none{
@@ -66,24 +51,26 @@
     color: #4D3494;
 }
 
+.vedio_wrap{
+    height: 100vh;
+}
+
 .vedio{
     width: 1217px; height: 450px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 5%;
     display: flex;
 }
 
 .vedio_nt{
     width: 299px; /*height: 450px;*/
     text-align: right;
-    background-color: #AA96FB;
+    background-color: rgba(170, 150, 251, 80%);
 }
-
 
 .vedio_nt>div{
     padding-top: 50%;
 }
-
 
 .vedio_up{
     display: block;
@@ -103,13 +90,62 @@
     width: 918px; height: 450px;
 }
 
+.info_wrap{
+    height: 100vh;
+}
 
 .main_info, .news{
     width: 1217px; height: 518px;
     margin: auto;
+    padding-top: 3%;
     display: flex;
     justify-content: space-between;
 }
+
+/* .swiper {
+    width: 100%;
+     height: auto;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.imgBox{
+    position: relative;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+
+.imgBox img{
+    display: block; height:100%;
+}
+
+.imgBox>p{
+    position: absolute; 
+    bottom:-10px; left:0;
+    width:100%; 
+    opacity:0.8; text-align: center;
+    background-color:#000; color:#fff; font-size: 16px; padding: 10px;
+} */
 
 figure{
     width: 25%;
@@ -189,6 +225,10 @@ figcaption>p{
     background-image: url(../img/bg_sec01_04.png);
 }
 
+.news_wrap{
+    height: 100vh;
+}
+
 .news>figure>a>div{
     width: 100%;
     padding-top: 96.47%;
@@ -242,33 +282,37 @@ figcaption>p{
     background-image: url(../img/foodpoision.png);
 }
 
+.events{
+    height: 70vh;
+}
+
 .events_opt_wrap{
     width: 1217px;
     margin: auto;
+    margin-top: 3%;
 }
 
 .events_opt{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .events_opt>li{
-    margin: 30px 10px 10px;
+    /* margin: 30px 10px 10px; */
+    margin: 1%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 3px rgb(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 3px rgb(0, 0, 0, 7%);
     transition: transform 0.4s;
 }
 
 .events_opt>li>a{
     display: block;
-    width: 585px; height: 236px;
+    width: 470px; height: 210px;
 }
 
-.events_opt>li:hover{
-    transform: translate(0, -25px);
-}
 
 .events_img1{
     background-image: url(../img/order.png);
@@ -289,21 +333,22 @@ figcaption>p{
 .sup_wrap{
     width: 1217px;
     margin:auto;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .sup{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 1% 3%;
     box-sizing: border-box;
 }
 
 .sup>li{
     margin-right: 10px;
     width: 220px;
-    box-shadow: 5px 5px 3px rgb(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 3px rgb(0, 0, 0, 7%);
 }
 
 .sup img{
@@ -403,17 +448,17 @@ figcaption>p{
     }
 
     .news figcaption>.t_figure{
-    font-size: 14px;
+        font-size: 14px;
     }
 
     .news figcaption>.b_figure{
-    font-size: 13px;
-    padding-top: 13px;
-    padding-left: 20px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 8%; left: 50%;
-    transform: translate(-50%, -8%);
+        font-size: 13px;
+        padding-top: 13px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 8%; left: 50%;
+        transform: translate(-50%, -8%);
     }
 
     .events_opt_wrap{
@@ -555,13 +600,13 @@ figcaption>p{
         padding-top: 70%;
     }
 
-    .news>figure:nth-child(3){
+    /* .news>figure:nth-child(5){
         display: none;
     }
 
     .news>figure:last-child{
         display: none;
-    }
+    } */
 
     .news figcaption>p{
         position: absolute;
@@ -570,36 +615,18 @@ figcaption>p{
     }
 
     .news figcaption>.t_figure{
-    font-size: 14px;
-    padding-bottom: 3px;
-    position: absolute;
-    bottom: 10%; left: 50%;
-    transform: translate(-50%, -10%);
+        font-size: 14px;
+        padding-bottom: 3px;
+        position: absolute;
+        bottom: 10%; left: 50%;
+        transform: translate(-50%, -10%);
     }
 
     .news figcaption>.b_figure{
-    font-size: 13px;
-    position: absolute;
-    bottom: 5%; left: 50%;
-    transform: translate(-50%, -5%);
-    }
-
-    .bnr_dot{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    
-    .bnr_dot>li>a{
-        display: block;
-        width: 12px; height: 12px;
-        border-radius: 20px;
-        margin: 0 5px;
-        border: 2px solid #7d7d7d;
-    }
-    
-    .bnr_dot>.active_dot{
-        background-color: #7d7d7d;
+        font-size: 13px;
+        position: absolute;
+        bottom: 5%; left: 50%;
+        transform: translate(-50%, -5%);
     }
 
     .events_opt_wrap{

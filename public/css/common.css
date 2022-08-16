@@ -32,22 +32,92 @@ h1>a {
     background-repeat: no-repeat;
 }
 
-nav>.h_1{
+.h_1{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: block;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 0;
 }
 
-nav>.h_1>li>a{
-    margin: 0 10px;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
+.h_1>li{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
 }
+
+.h_1>li:hover .hovermenu {
+    display: block;
+}
+
+.h_1>li>a{
+   
+    position: relative;
+    display: block;
+    padding: 0 30px;
+    line-height: 70px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFAF6;
+    box-sizing: border-box;
+    transition: color .6s ease-in-out;
+}
+
+.h_1>li>a:hover{
+    text-shadow: 0 0 0.5px #00305b;
+}
+
+.h_1>li:hover>a:before {
+    width: 100%;
+}
+
+.h_1>li>a::before{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #00305b;
+    transform: translateX(-50%);
+    transition: width .25s ease-in-out;
+}
+
+.hovermenu {
+    text-align: left;
+    display: none; 
+    position: absolute;
+    left: 50%;
+    min-width: 100%;
+    padding: 20px 34px;
+    background-color: #ffffff;
+    z-index: -1;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+.hovermenu>li>a {
+    display: block;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 2.67;
+    color: #646464;
+    transition: color 0.25s ease-in-out;
+    font-weight: 700;
+}
+
+.hovermenu>li>a:hover {
+    text-shadow: 0 0 0.5px #00305b;
+    color: #00305b;
+} 
 
 .header_wrap>.h_2{
     width: 255px;
@@ -187,7 +257,7 @@ footer{
         display: none;
     }
  
-    nav>.h_1>li>a{
+    .h_1>li>a{
         margin: 0 8px;
         font-size: 14px;
         padding: 5px;
@@ -271,7 +341,7 @@ footer{
         display: block;
     }
 
-    nav>.h_1{
+    .h_1{
         display: none;
     }
     
