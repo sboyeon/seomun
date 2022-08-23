@@ -36,7 +36,7 @@ window.onload = function () {
             }
           }
         } 
-        // 화면 이동 0.7초(800)
+        // 화면 이동 0.7초
         $("html,body").stop().animate({
           scrollTop: moveTop + 'px'
         }, {
