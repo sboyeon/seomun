@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <div class="header_wrap">
+        <div class="w1440 header_wrap">
             <h1>
                 <a href="/"></a>
             </h1>
@@ -30,53 +30,53 @@
                     <li>
                         <a href="intro">야시장소개</a>
                         <ul class="hovermenu">
-                            <li><a href="#">야시장안내</a></li>
-                            <li><a href="#">매대위치</a></li>
+                            <li><a href="intro">야시장안내</a></li>
+                            <li><a href="">매대위치</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="">먹거리살거리</a>
                         <ul class="hovermenu">
-                            <li><a href="#">퓨전&글로벌</a></li>
-                            <li><a href="#">한국전통식</a></li>
-                            <li><a href="#">스트리트푸드</a></li>
-                            <li><a href="#">살거리</a></li>
+                            <li><a href="">퓨전&글로벌</a></li>
+                            <li><a href="">한국전통식</a></li>
+                            <li><a href="">스트리트푸드</a></li>
+                            <li><a href="">살거리</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="">서문거리예술문화</a>
                         <ul class="hovermenu">
-                            <li><a href="#">거리예술학교</a></li>
-                            <li><a href="#">행사이벤트안내</a></li>
-                            <li><a href="#">주요관광지</a></li>
+                            <li><a href="">거리예술학교</a></li>
+                            <li><a href="">행사이벤트안내</a></li>
+                            <li><a href="">주요관광지</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="notice">참여마당</a>
                         <ul class="hovermenu">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">행사안내</a></li>
-                            <li><a href="#">현장스케치</a></li>
-                            <li><a href="#">언론보도</a></li>
-                            <li><a href="#">문의 및 제안</a></li>
-                            <li><a href="#">입점신청</a></li>
+                            <li><a href="notice">공지사항</a></li>
+                            <li><a href="">행사안내</a></li>
+                            <li><a href="">현장스케치</a></li>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">문의 및 제안</a></li>
+                            <li><a href="">입점신청</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="">입점신청</a>
                         <ul class="hovermenu">
-                            <li><a href="#">입점절차</a></li>
-                            <li><a href="#">식품셀러 입점신청</a></li>
-                            <li><a href="#">프리마켓셀러 입점신청</a></li>
-                            <li><a href="#">입점신청 확인</a></li>
-                            <li><a href="#">푸드트럭 입점신청</a></li>
+                            <li><a href="">입점절차</a></li>
+                            <li><a href="">식품셀러 입점신청</a></li>
+                            <li><a href="">프리마켓셀러 입점신청</a></li>
+                            <li><a href="">입점신청 확인</a></li>
+                            <li><a href="">푸드트럭 입점신청</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="login">
                 <ul class="h_2">
-                    <li>회원가입</li>
+                    <li><a href="join">회원가입</a></li>
                     <li id="login" onclick="javascript:kakaoLogin();">로그인</li>
                     <li><span id="user"></span></li>
                     <li id="logout" onclick="javascript:kakaoLogout();">로그아웃</li>
@@ -93,46 +93,33 @@
         <%- body %>
     </main>
     <footer>
-        <div class="footer_wrap">
-            <div class="f_cs">
-                <ul>
-                    <li><span>고객문의</span> : gsmmarket@naver.com</li>
-                    <li>|</li>
-                    <li><span>제휴문의</span> : www.nightseomun.com</li>
-                </ul>
-            <div class="address">
+        <article class="w1440 foot_wrap">
+            <h1 class="m_none">
+                <a class="foot_logo" href="index">
+                    <img src="../img/logo_nw.png">
+                </a>
+            </h1>
+            <ul class="foot_info">
+                <li>
+                    <span>주식회사 : 서문시장야시장 / </span>
+                    <span>사업자번호 : 053-256-6341 / </span>
+                    <span>대표번호 : 053-621-1985 / </span>
+                </li>
+                <li>
+                    <span>주소 : 대구 남구 대명로 215 대구광역시상인회관 4층</span>
+                </li>
+            </ul>            
+            <div class="foot_rigth">
                 <ul>
                     <li>
-                        <a href="">
-                            <span>대표번호</span> : 053-621-1985</li>
-                        </a>
-                    <li><span>사업자등록번호</span> : 053-256-6341</li>
+                        <a href="#"><span>직원전용 | </span></a>
+                        <a href="#"><span>개인정보처리방침</span></a>
+                        <a href="#"><span> | 문의하기</span></a>
+                    </li>
+                    <li>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved.</li>
                 </ul>
-            </div>
-            <div class="m_block">
-                    <p><span>소재지</span> : 대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ상권육성팀)</p>
-            </div>
-            <article class="m_block_wrap">
-                <div class="m_block">
-                    <p><span>책임자</span>: 재단법인 대구전통시장진흥재단ㆍ글로벌명품시장육성사업단매대관리자</p>
-                    <p><span>호스팅 제공자</span> : 대구광역시 글로벌명품시장 육성사업단</p>
-                </div>
-                <div class="m_block_sns">
-                    <a href="https://blog.naver.com/nightseomun"><img src="img/naverblog.logo.jpg"></a>
-                    <a href="https://www.facebook.com/nightseomun/?hc_ref=ARRHHKP1XYw2L6Q8Qh6HV56FBtvlP86bB4FF6AUTeP2Sw1Mt2GJIr0M4NO9pPaIA4VA&fref=nf&__tn__=kC-R"><img src="img/ico-sharein-fb.png"></a>
-                    <a href=""><img src="img/instalogo.png"></a>
-                    <a href=""><img src="img/twitterlogo.png"></a>
-                </div>
-            </article>
-            <div class="f_info">
-                    <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency. All Rights Reserved</p>
-                    <div>
-                        <p><a href="">CS Center</a></p>
-                        <p><a href="">Privacy Policy</a></p>
-                        <p><a href="">Terms & Condition</a></p>
-                    </div>
-            </div>
-        </div>
+            </div>            
+        </article>
     </footer>
     <div class="moveTopBtn" id="container"></div>
 </body>
@@ -141,15 +128,18 @@
 <script src="./js/script.js"></script>
 <script src="./js/top.js"></script>
 <script src="./js/accordion.js"></script>
-<script src="./js/pageScroll.js"></script>
 <!-- <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+    pagination: {
         el: ".swiper-pagination",
-        clickable: true,
-      },
+        type: "fraction",
+    },
     });
-  </script> -->
+</script> -->
 </html>
